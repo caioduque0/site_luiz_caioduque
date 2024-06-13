@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pedidos - Loja de Bebidas</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <nav class="nav">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="sobre-nos.html" class="nav-link">Sobre Nós</a>
+                <a href="produtos.html" class="nav-link">Produtos</a>
+                <a href="pedidos.html" class="nav-link">Pedidos</a>
+            </nav>
+        </header>
+        <main class="principal">
+            <section class="pedidos">
+                <h1>Seus Pedidos</h1>
+                <div class="lista-pedidos"></div>
+                <br>
+                <p class="preco-total">Preço final das bebidas selecionadas: R$0.00</p>
+                <br>
+            </section>
+    <section class="pagamento">
+        <br>
+        <h2>Adicionar Cartão de Crédito</h2>
+        <form id="credito-form">
+            <label for="numero-cartao">Número do Cartão:</label>
+            <input type="text" id="numero-cartao" name="numero-cartao" required>
+            <br>
+            <label for="nome-cartao">Nome no Cartão:</label>
+            <input type="text" id="nome-cartao" name="nome-cartao" required>
+            <br>
+            <label for="data-vencimento">Data de Validade:</label>
+            <input type="text" id="data-vencimento" name="data-vencimento" required>
+            <br>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+            <br>
+            <button type="submit">Adicionar Cartão</button>
+        </form>
+    </section>
+    <section class="cartao-adicionados">
+        <br>
+        <h2>Cartões Adicionados</h2>
+        <div class="cartoes-lista"></div>
+    </section>
+    </main>
+    <footer class="rodape">
+            <p>Para nós da Boteco Bebidas, beber é uma arte</p>
+            <p>WhatsApp (43) 99933-3111, Telefone (43) 3379-1212</p>
+            <p>&copy; 2024 Loja de Bebidas. Todos os direitos reservados.</p>    </footer>
+    <script src="scripts.js"></script>
+    </body>
+</html>

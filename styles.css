@@ -1,0 +1,228 @@
+*{
+    margin: 0px;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    border: 0px;
+    padding: 0px;
+}
+
+.cabecalho {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: #495057;
+}
+.botao-aba {
+    display: inline-block;
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.botao-aba:hover {
+    background-color: #495057;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.principal {
+    flex: 1;
+    padding: 20px;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+.secao-titulo {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.secao-texto {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.bebidas {
+    margin-top: 40px;
+}
+
+.bebidas h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.bebidas h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+.item p {
+    display: inline-block;
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.bebida {
+    text-align: left;
+    width: 75%;
+}
+
+.preco {
+    text-align: right;
+    width: 25%;
+    margin-right: 20px;
+}
+
+.rodape {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.add-bttn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.add-bttn:hover {
+    background-color: darkred;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.add-bttn, .remove-bttn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.add-bttn:hover, .remove-bttn:hover {
+    background-color: darkred;
+}
+
+.cartoes-lista {
+    margin-top: 20px;
+}
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.add-bttn, .remove-bttn-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.add-bttn:hover, .remove-bttn:hover {
+    background-color: darkred;
+}
+
+.total-cartao, .preco-total {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.order-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+@media (max-width: 1200px) {
+    .nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .nav-link {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 5px 5px;
+    }
+    .rodape {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .nav-link {
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+        padding: 5px 5px;
+    }
+    .rodape {
+        font-size: 10px;
+    }
+}
